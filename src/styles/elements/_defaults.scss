@@ -1,0 +1,21 @@
+body,
+html {
+  font-family: $catamaran;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  background: $background-color;
+}
+#main {
+  overflow-x: hidden;
+}
+h1, 
+h2, 
+h3 {
+  font-weight: 400;
+  font-family: $roboto-slab;
+}

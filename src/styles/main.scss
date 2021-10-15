@@ -1,0 +1,86 @@
+// SETTINGS
+@import 'settings/_settings.config';
+@import '../../node_modules/inuitcss/settings/settings.core';
+@import 'settings/_settings.global';
+@import 'settings/_mq';
+@import 'settings/_fonts.scss';
+
+// TOOLS
+@import '../../node_modules/inuitcss/tools/tools.font-size';
+@import '../../node_modules/inuitcss/tools/tools.clearfix';
+@import '../../node_modules/sass-mq/mq';
+@import 'tools/tools.aliases';
+
+// GENERIC
+@import '../../node_modules/inuitcss/generic/generic.box-sizing';
+@import '../../node_modules/inuitcss/generic/generic.normalize';
+@import '../../node_modules/inuitcss/generic/generic.shared';
+@import '../../node_modules/inuitcss/generic/generic.shared';
+
+// ELEMENTS
+@import '../../node_modules/inuitcss/elements/elements.page';
+@import '../../node_modules/inuitcss/elements/elements.headings';
+@import '../../node_modules/inuitcss/elements/elements.images';
+@import '../../node_modules/inuitcss/elements/elements.tables';
+
+@import 'elements/_var.scss';
+@import 'elements/_ie.scss';
+@import 'elements/_defaults.scss';
+@import 'elements/_misc.scss';
+@import 'elements/_animations.scss';
+
+// OBJECTS
+//
+@import 'objects/_section.scss';
+@import 'objects/_row.scss';
+// Uncomment and add to this section as necessary.
+// @import "../../node_modules/objects/objects.wrapper";
+// @import "../../node_modules/objects/objects.layout";
+// @import "../../node_modules/objects/objects.media";
+// @import "../../node_modules/objects/objects.flag";
+// @import "../../node_modules/objects/objects.list-bare";
+// @import "../../node_modules/objects/objects.list-inline";
+// @import "../../node_modules/objects/objects.box";
+// @import "../../node_modules/objects/objects.block";
+// @import "../../node_modules/objects/objects.ratio";
+// @import "../../node_modules/objects/objects.crop";
+// @import "../../node_modules/objects/objects.table";
+// @import "../../node_modules/objects/objects.pack";
+
+// COMPONENTS
+//
+// Build and include your project’s UI components here.
+//----------------------------------*\
+// Components
+//----------------------------------*/
+@import 'components/_section.scss';
+@import 'components/_button.scss';
+@import 'components/_link.scss';
+@import 'components/_nav.scss';
+@import 'components/_hero.scss';
+@import 'components/_whyus.scss';
+@import 'components/_ourmenu.scss';
+@import 'components/_popular-dishes.scss';
+@import 'components/_book.scss';
+@import 'components/_contact.scss';
+@import 'components/_hamburger.scss';
+
+
+// PARTIALS
+@import 'partials/_header.scss';
+@import 'partials/_footer.scss';
+
+// UTILITIES
+// @import "utilities/utilities.clearfix";
+@import 'utilities/_flex.scss';
+
+// Be aware that enabling offsets produces a large chunk of classes which might
+// bloat your CSS, depending of the amount of breakpoints you defined.
+// Only set this to `true` if you are absolutely sure about what you are doing.
+// $inuit-offsets: true;
+// @import "utilities/utilities.widths";
+// @import "utilities/utilities.headings";
+// @import "utilities/utilities.spacings";
+// @import "utilities/utilities.responsive-spacings";
+// @import "utilities/utilities.print";
+// @import "utilities/utilities.hide";

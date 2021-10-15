@@ -1,0 +1,75 @@
+.c-hero {
+  max-width: 584px;
+  margin: 0 auto 85px;
+  @include mq(md) {
+    margin-bottom: 119px;
+  }
+  @include mq(desktopAd) {
+    margin-bottom: 248px;
+  }
+  text-align: center;
+}
+.c-hero__title {
+  font-weight: 700;
+  @include font-size(35px, 1.2);
+  margin-bottom: 16px;
+  @include mq(md) {
+    @include font-size(52px, 1.2);
+    margin-bottom: 24px;
+  }
+  @include mq(desktopAd) {
+    margin-bottom: 20px;
+  }
+}
+.c-hero__description {
+  display: block;
+  font-weight: 400;
+  @include font-size(22px, 36px);
+  margin-bottom: 72px;
+  @include mq(md) {
+    @include font-size(26px, 43px);
+    margin-bottom: 80px;
+  }
+  @include mq(desktopAd) {
+    @include font-size(24px, 39px);
+    margin-bottom: 69px;
+  }
+}
+.c-hero__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    flex-direction: row;
+  }
+  .c-btn--primary {
+    order: 2;
+    margin-top: 16px;
+    @include mq(md) {
+      order: 0;
+      margin-top: 0;
+      margin-right: 20px;
+    }
+    @include mq(desktopAd) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.c-header__btn-bottom {
+  display: none;
+  @include mq(md) {
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin: 0 auto 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq(desktopAd) {
+    display: none;
+  }
+}

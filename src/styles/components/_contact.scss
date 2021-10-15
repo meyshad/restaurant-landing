@@ -1,0 +1,98 @@
+.c-contact__header {
+    padding: 16px 25px 80px;
+    text-align: center;
+    @include mq(md) {
+        padding: 24px 75px 88px;
+    }
+    @include mq(desktopAd) {
+        padding: 40px 104px 56px;
+        text-align: left;
+    }
+}
+
+.c-contact__title {
+    margin-bottom: 80px;
+}
+
+.c-contact__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @include mq(desktopAd) {
+        flex-direction: row;
+    }
+}
+
+.c-contact__col {
+    display: flex;
+    align-items: center;
+    @include font-size(22px, 1.2);
+    color: $color-slidetext;
+    flex-direction: column;
+    margin-bottom: 48px;
+    svg {
+        margin-bottom: 20px;
+    }
+    @include mq(md) {
+        @include font-size(24px, 1.2);
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 0;
+        @include font-size(22px, 1.2);
+        flex-direction: row;
+        svg {
+            margin-right: 24px;
+            margin-bottom: 0;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-contact__map {
+    box-sizing: border-box;
+    min-height: 480px;
+    margin-bottom: 80px;
+    @include mq(md) {
+        border: 1px solid $color-white;
+    }
+}
+
+.c-contact__worktime {
+    text-align: center;
+    @include font-size(26px, 1.2);
+    color: $color-white;
+    font-weight: 400;
+    margin-bottom: -8px;
+    @include mq(md) {
+        @include font-size(30px, 1.2);
+        margin-bottom: 8px;
+    }
+    @include mq(desktopAd) {
+        @include font-size(26px, 1.2);
+    }
+}
+
+.c-worktime__title {
+    margin: 0 0 8px;
+    font-family: $catamaran;
+    color: $color-red;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    @include font-size(22px, 1.2);
+    @include mq(md) {
+        @include font-size(24px, 1.2);
+        margin-bottom: 8px;
+    }
+    @include mq(desktopAd) {
+        @include font-size(20px, 1.2);
+    }
+}
+
+.c-worktime__time {
+    margin: 0;
+}

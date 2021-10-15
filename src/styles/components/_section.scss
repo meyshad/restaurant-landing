@@ -1,0 +1,58 @@
+  .c-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 1.4em;
+     @include mq(desktopAd){
+      margin: 0 0 1.75em;
+      align-items: flex-start;
+    }
+  }
+  
+  .c-section__title {
+    font-family: $roboto-slab;
+    position: relative;
+    margin: 0 0 7px;
+    @include font-size(34px, 45px);
+    strong, b{
+      font-weight: 700;
+    }
+    @include mq(md){
+      @include font-size(40px, 53px);
+    }
+    &:after {
+      content: '';
+      width: 44px;
+      height: 4px;
+      background: #D14800;
+      position: absolute;
+      left: calc(50% - 22px);
+      bottom: -8px;
+      @include mq(desktopAd) {
+        left: 0;
+      }
+    }
+  }
+  
+  .s-text{
+    margin: 0 0 1.4em;
+    @include mq(desktopAd){
+      margin: 0 0 1.875em;
+    }
+    p {
+      font-family: $catamaran;
+      font-weight: 400;
+      @include font-size(22px, 1.3);
+      @include mq(md) {
+        @include font-size(24px, 1.3);
+      }
+      @include mq(desktopAd) {
+        @include font-size(20px, 1.3);
+      }
+      margin: 0 0 1.125em;
+      strong, b{
+        font-weight: bold;
+      }
+    }
+  }
+  

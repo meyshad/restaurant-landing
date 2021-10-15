@@ -1,0 +1,29 @@
+// ::selection{
+//   background: #575a9b;
+//   color: #fff;
+//   text-shadow: none;
+// }
+// ::-moz-selection{
+//   background: #575a9b;
+//   color: #fff;
+//   text-shadow: none;
+// }
+// ::-webkit-selection{
+//   background: #575a9b;
+//   color: #fff;
+//   text-shadow: none;
+// }
+
+::placeholder {
+    opacity: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

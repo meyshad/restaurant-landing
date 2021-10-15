@@ -1,0 +1,85 @@
+.s-nav {
+    flex-direction: column;
+    list-style: none;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 100%;
+    max-width: 90%;
+    align-items: flex-start;
+    display: flex;
+    @include mq(md) {
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      max-width: 100%;
+      margin: 0;
+      padding-top: 41px;
+    }
+    @include mq(desktopAd) {
+      padding-top: 52px;
+    }
+    li {
+      margin: 0 0 2.5em;
+      @include mq(md) {
+        margin: 0 1.125em;
+      }
+      a {
+        font-family: $catamaran;
+        font-style: normal;
+        font-weight: 400;
+        &:hover {
+          color: $color-red;
+        }
+        @include font-size(22px, 36px);
+        @include mq(md) {
+          @include font-size(20px, 33px);
+          font-weight: 500;
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $color-red;
+          }
+          &:before {
+            opacity: 0;
+            transform: translateY(- $distance);
+            transition: transform 0s $easeOutBack, opacity 0s;
+          }
+          &:after {
+            opacity: 0;
+            transform: translateY($distance/2);
+            transition: transform $duration $easeOutBack, opacity $duration;
+          }
+          &:hover,
+          &:focus {
+            color: $color-white;
+            &:before,
+            &:after {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            &:before {
+              transition: transform $duration $easeOutBack, opacity $duration;
+            }
+            &:after {
+              transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+            }
+          }
+        }
+        @include mq(desktopAd) {
+          @include font-size(19px, 31.16px);
+          font-weight: 400;
+        }
+        text-transform: uppercase;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+      }
+    }
+  } 
+  

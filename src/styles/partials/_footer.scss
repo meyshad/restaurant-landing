@@ -1,0 +1,18 @@
+.c-section--footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    @include mq(md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.c-footer {
+    text-align: center;
+    border-top: 1px solid #353535;
+    @include font-size(18px , 1.2);
+    color: $color-footertext;
+    padding: 40px 9px 24px;
+    @include mq(desktopAd) {
+        padding-bottom: 72px;
+    }
+}

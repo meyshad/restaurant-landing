@@ -1,0 +1,89 @@
+.c-section--whyus {
+    margin-bottom: 16px;
+    padding: 0;
+    @include mq(md) {
+        padding: 2em 0;
+        margin-bottom: 77px;
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 64px;
+    }
+}
+
+.c-whyus {
+    background: $section-bg;
+    border-top: 1px solid $border-section;
+    border-bottom: 1px solid $border-section;
+    position: relative;
+    padding: 64px 25px;
+    text-align: center;
+    @include mq(md) {
+        border: 1px solid $border-section;
+        padding: 88px 40px;
+        text-align: left;
+    }
+    @include mq(desktopAd) {
+        padding: 64px 104px;
+    }
+    .c-whyus__col {
+        @include mq(md) {
+            padding: 0 17px;
+        }
+        &:first-child {
+            @include mq(desktopAd) {
+                display: flex;
+                align-items: center;
+                min-height: 429px;
+            }
+        }
+    }
+    .s-text {
+        margin-bottom: 64px;
+        @include mq(md) {
+            margin-bottom: 72px;
+        }
+        @include mq(desktopAd) {
+            margin-bottom: 0;
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+        br {
+            margin-bottom: 1.125em;
+            display: block;
+            content: " ";
+        }
+    }
+}
+
+.c-whyus__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq(desktopAd) {
+        flex-direction: row;
+    }
+    .col-lg-6 {
+        @include mq(md) {
+            max-width: 100%;
+        }
+        @include mq(desktopAd) {
+            max-width: 50%;
+        }
+    }
+}
+
+.c-whyus__img {
+    text-align: center;
+    @include mq(md) {
+        margin-bottom: -160px;
+    }
+    @include mq(desktopAd) {
+        position: absolute;
+        top: 64px;
+        right: 0;
+    }
+    img {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    }
+}

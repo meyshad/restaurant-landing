@@ -1,0 +1,57 @@
+.u-flex {
+  display: flex;
+}
+
+.u-align-center{
+  align-items: center;
+}
+
+.u-align-end{
+  align-items: flex-end;
+}
+
+.u-flex--column {
+  flex-direction: column;
+}
+
+.u-flex--center {
+  align-content: center;
+  justify-content: center;
+}
+
+.u-mb-60{
+  margin-bottom: 40px;
+  @include mq(md){
+    margin-bottom: 60px;
+  }
+}
+
+.u-size-22{
+  p{
+    @include font-size(22px, 1.5);
+    letter-spacing: 0.01em;
+  }
+}
+
+.u-text-center{
+  text-align: center;
+  p{
+    text-align: center;
+  }
+}
+
+.u-hide-mobile{
+  display: none;
+  @include mq(md){
+    display: flex;
+  }
+}
+.u-hide-desktop{
+  @include mq(md){
+    display: none;
+  }
+}
+.u-medium-width{
+  max-width: 944px;
+  margin: 0 auto;
+}

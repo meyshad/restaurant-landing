@@ -1,0 +1,97 @@
+.c-section--header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 46.88%, rgba(0, 0, 0, 0) 100%), url(../images/header.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 4px;
+    @include mq(md) {
+        padding: 2em 0;
+        margin-bottom: 40px;
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 64px;
+    }
+}
+
+.c-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 53px;
+    flex-direction: column;
+    @include mq(md) {
+        margin-bottom: 61px;
+        padding: 1.75em 0;
+    }
+    @include mq(desktopAd) {
+        flex-direction: row;
+        margin-bottom: 162px;
+    }
+}
+
+.c-header__col {
+    &:first-child{
+      position: relative;
+      width: 100%;
+      padding: 1.282em 1.5em;
+      // transition: background 2.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      @include mq(md){
+        width: auto;
+        border-bottom: none;
+        padding: 0;
+      }
+    }
+}
+  
+.c-header__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10.18em 4em;
+    margin: 0;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(200%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    list-style: none;
+    overflow-y: scroll;
+    height: 100%;
+    z-index: 3;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.85) 100%);
+    @include mq(md) {
+        position: unset;
+        transform: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        min-height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow-y: visible;
+        .admin-bar &{
+            padding: 0;
+        }
+        @include ie{
+            position: relative;
+        }
+    }
+}  
+
+.c-logo {
+    display: flex;
+    position: relative;
+    width: 143px;
+    @include mq(md) {
+        width: 240px;
+    }
+    @include mq(desktopAd) {
+        width: 208px;
+    }
+}

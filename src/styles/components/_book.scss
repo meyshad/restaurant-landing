@@ -1,0 +1,274 @@
+.c-section--book {
+    padding-top: 0;
+}
+
+.c-book__body {
+    background: linear-gradient(180deg, #000000 3.68%, rgba(0, 0, 0, 0.2) 72.66%), url(../images/book-bg.jpg) no-repeat top center;
+    background-size: cover;
+    border: 1px solid $color-black;
+    padding-top: 80px;
+    @include mq(md) {
+        padding-top: 0;
+    }
+}
+
+.c-book__head {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include mq(md) {
+        margin-bottom: 72px;
+    }
+    @include mq(desktopAd) {
+        align-items: flex-start;
+        padding: 0 122px;
+        text-align: left;
+    }
+}
+
+.c-book__title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    @include mq(md) {
+        margin-bottom: 20px;
+    }
+}
+
+.c-book__description {
+    @include font-size(22px, 1.3);
+    font-family: $catamaran;
+    padding: 0 25px;
+    @include mq(md) {
+        max-width: 376px;
+        padding: 0;
+        @include font-size(24px, 1.3);
+    }
+    @include mq(desktopAd) {
+        @include font-size(20px, 1.3);
+    }
+}
+
+.c-book__form {
+    background: $section-bg;
+    border-top: 1px solid $border-section;
+    border-bottom: 1px solid $border-section;
+    box-sizing: border-box;
+    padding: 65px 25px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #909090;
+    @include font-size(17px, 1.2);
+    font-family: $catamaran;
+    font-weight: 400;
+    @include mq(md) {
+        max-width: 463px;
+        border: 1px solid $border-section;
+        padding: 64px 43px;
+        margin: 0 auto 88px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    }
+    @include mq(desktopAd) {
+        max-width: 480px;
+        padding: 64px;
+        margin: -80px 0 79px auto;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            margin-bottom: 28px;
+        }
+        li:last-child {
+            margin-bottom: 48px;
+        }
+    }
+    label {
+        display: block;
+        margin-bottom: 12px;
+    }
+    input {
+        height: 49px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        width: 100%;
+        color: $color-white;
+        font-family: $catamaran;
+        font-size: 18px !important;
+        padding: 8px 18px !important;
+        transition: 0.2s linear 0s;
+        &:focus {
+            border-color: $border-section;
+            outline: none;
+        }
+    }
+}
+
+.gform_button {
+    background: $color-primary !important;
+    font-size: 22px !important;
+    font-weight: 500;
+    cursor: pointer !important;
+    color: $color-white !important;
+    box-shadow: $box-shadow !important;
+    border: none !important;
+    border-radius: $global-radius !important;
+    height: 51px !important;
+    transition: 0.2s linear 0s;
+    &:hover {
+        background: $color-white !important;
+        color: $color-primary !important;
+    }
+}
+
+.c-book__form {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: url(../images/icons/date.svg) no-repeat center;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    input[type="time"]::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: url(../images/icons/time.svg) no-repeat center;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    input[type="number"] {
+        text-align: center;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+    } 
+}
+
+.gfield {
+    margin-bottom: 14px !important;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 1.2;
+}
+
+.gform_wrapper .gfield_required {
+    display: none !important;
+}
+
+.gform_wrapper.gravity-theme .ginput_container_date input {
+    width: 100% !important;
+    background: url('../images/icons/date.svg') no-repeat scroll calc(100% - 18px) 13px rgba(255, 255, 255, 0.1);
+}
+
+.gform_wrapper.gravity-theme .m-time .ginput_complex {
+    height: 49px;
+    background: url('../images/icons/time.svg') no-repeat scroll calc(100% - 18px) 14px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 14px;
+}
+
+.gform_wrapper.gravity-theme .gfield_time_ampm.below, .gform_wrapper.gravity-theme .hour_minute_colon.below {
+    line-height: 47px;
+}
+
+.gform_wrapper.gravity-theme .m-time .ginput_complex input::placeholder {
+    opacity: 1;
+}
+
+.gform_wrapper.gravity-theme .m-time .ginput_complex input {
+    background: none;
+    border: none;
+}
+
+.gform_wrapper.gravity-theme .description, .gform_wrapper.gravity-theme .gfield_description, .gform_wrapper.gravity-theme .gsection_description, .gform_wrapper.gravity-theme .instruction {
+    padding: 0 !important;
+    border: none;
+    background: none;
+}
+
+.gform_validation_errors {
+    margin-bottom: 28px !important;
+    background: none !important;
+}
+
+.gform_wrapper .gform_validation_errors>h2.hide_summary {
+    font-family: $catamaran !important;
+}
+
+.title-confirmation {
+    display: block;
+    text-align: center;
+    @include font-size(26px, 2);
+    font-family: $roboto-slab;
+    color: $color-white;
+}
+
+.description-confirmation {
+    display: block;
+    text-align: center;
+    @include font-size(18px, 1.4);
+    font-family: $catamaran;
+    color: $color-white;
+}
+
+.icon-confirmation {
+    display: block;
+    margin: 0 auto 32px;
+    width: 100px;
+    height: 100px;
+    background: #1E1E1E;
+    border: 2px solid #2D2D2D;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.gform_confirmation_message {
+    padding: 48px 0;
+}
+
+.gfield_validation_message {
+    display: none;
+}
+
+.gform_ajax_spinner {
+    display: none;
+}
+
+.quantity {
+    position: relative;
+    .instruction {
+        display: none;
+    }
+}
+
+.quantity-button {
+    position: absolute;
+    cursor: pointer;
+    &.quantity-up {
+        right: 20px;
+        bottom: 11px;
+    }
+    &.quantity-down {
+        left: 20px;
+        bottom: 18px;
+    }
+}
+
+.gform_wrapper.gravity-theme .gform_footer {
+    margin-bottom: 0 !important;
+    input {
+        margin-bottom: 0 !important;
+    }
+}

@@ -1,0 +1,45 @@
+.c-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-gray;
+    color: $color-white;
+    cursor: pointer;
+    font-family: $catamaran;
+    @include font-size(22px, 36px);
+    font-weight: 500;
+    padding: 0 1em;
+    height: 51px;
+    width: 220px;
+    @include mq(md) {
+      @include font-size(25px, 41px);
+      height: 58.13px;
+    }
+    @include mq(desktopAd) {
+      @include font-size(22px, 36px);
+      height: 51px;
+      width: 193px;
+    }
+    border-radius: $global-radius;
+    text-decoration: none;
+    transition: 0.2s linear 0s;
+    box-shadow: $box-shadow;
+    &:hover {
+      background-color: $color-white;
+      color: $color-gray;
+    }
+  }
+  
+  .c-btn--secondary {
+    &:hover {
+      background-color: $color-white;
+      color: $color-gray;
+    }
+  }
+  
+  .c-btn--primary {
+    background-color: $color-primary;
+    &:hover {
+      color: $color-primary;
+    }
+  }

@@ -1,0 +1,162 @@
+.c-section--popular-dishes {
+    padding-bottom: 0;
+    @include mq(md) {
+        margin-bottom: 88px;
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 184px;
+    }
+}
+.c-popular-dishes {
+    background: $section-bg;
+    border-top: 1px solid $border-section;
+    border-bottom: 1px solid $border-section;
+    position: relative;
+    padding: 64px 17px;
+    @include mq(md) {
+        padding: 88px 40px;
+        border: 1px solid $border-section;
+    }
+    @include mq(desktopAd) {
+        padding: 104px;
+    }
+}
+
+.c-popular-dishes__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @include mq(desktopAd) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.c-popular-dishes__title {
+    text-align: center;
+    margin-bottom: 68px;
+    @include mq(desktopAd) {
+        text-align: left;
+        margin-bottom: 76px;
+    }
+}
+
+.c-popular-dishes__arrows {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    @include mq(md) {
+        margin-bottom: 56px;
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+}
+
+.c-popular-dishes__number {
+    font-family: $catamaran;
+    font-weight: 400;
+    @include font-size(22px, 36px);
+    margin: 0 32px;
+}
+
+.c-popular-dishes__arrow-previous {
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.c-popular-dishes__arrow-next {
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.c-popular-dishes__number-secondary {
+    color: $color-red;
+}
+
+.c-popular-dishes__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    min-height: 386px;
+    @include mq(desktopAd) {
+        flex-direction: row;
+    }
+}
+
+.c-popular-dishes__desciptions {
+    @include mq(desktopAd) {
+        margin-left: 40px;
+        max-width: 376px;
+    }
+}
+
+.c-popular-dishes__images {
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+    width: 100%;
+    @include mq(desktopAd) {
+        max-width: 584px;
+        margin-bottom: 0
+    }
+}
+
+.c-popular-dishes__item-title {
+    @include font-size(30px, 40px);
+    margin-top: 0;
+    padding: 0 8px;
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+        padding: 0 20px;
+        @include font-size(34px, 45px);
+    }
+    @include mq(desktopAd) {
+        padding: 0;
+        @include font-size(32px, 42px);
+    }
+}
+
+.c-popular-dishes__item-text {
+    @include font-size(22px, 1.3);
+    color: $color-slidetext;
+    font-family: $catamaran;
+    font-weight: 400;
+    padding: 0 8px;
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+        padding: 0 20px;
+        @include font-size(24px, 1.3);
+    }
+    @include mq(desktopAd) {
+        padding: 0;
+        @include font-size(20px, 1.3);
+    }
+    br {
+        margin-bottom: 1.125em;
+        display: block;
+        content: " ";
+    }
+}
+
+.c-popular-dishes__item-price {
+    @include font-size(30px, 1.3);
+    font-family: $catamaran;
+    color: #FFFCFC;
+    font-weight: 500;
+    padding: 0 8px;
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+        padding: 0 20px;
+    }
+    @include mq(desktopAd) {
+        padding: 0;
+        @include font-size(28px, 1.3);
+    }
+}

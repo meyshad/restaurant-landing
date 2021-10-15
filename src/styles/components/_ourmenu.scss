@@ -1,0 +1,178 @@
+.c-section--ourmenu {
+    padding-bottom: 16px;
+    @include mq(md) {
+        padding-bottom: 2em;
+        margin-bottom: 8px;
+    }
+    @include mq(desktopAd) {
+        margin-bottom: 0;
+    }
+}
+
+.c-ourmenu {
+    background: $section-bg;
+    border-top: 1px solid $border-section;
+    border-bottom: 1px solid $border-section;
+    padding: 64px 25px;
+    @include mq(md) {
+        padding: 88px 40px;
+        border: 1px solid $border-section;
+    }
+    @include mq(desktopAd) {
+        padding: 104px;
+    }
+}
+
+.c-ourmenu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mq(desktopAd) {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        max-width: 100%;
+      }
+}
+
+.c-menuname {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    @include mq(md){
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+      }
+}
+
+.c-menuname__tab {
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border: 0;
+    color: $color-white;
+    font-family: $catamaran;
+    @include font-size(24px, 39px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 0 39px 0;
+    border-bottom: 1px dashed #FFFFFF;
+    height: 34px;
+    transition: 0.2s linear 0s color;
+    margin-bottom: 28px;
+    &.is-active {
+        color: $color-red;
+        font-weight: 400;
+    }
+    @include mq(md) {
+        @include font-size(24px, 34px);
+        padding: 0 0 34px 0;
+        margin-bottom: 0;
+        margin: 0 19px 0;
+        &.is-active {
+            letter-spacing: 0.01em;
+        }
+    }
+    @include mq(desktopAd) {
+        padding-top: 10px;
+        @include font-size(24px, 34px);
+        margin: 0 0 0 48px;
+    }
+}
+
+.c-ourmenu__title {
+    margin-bottom: 68px;
+    @include mq(desktopAd) {
+        margin-bottom: 7px;
+    }
+}
+
+.c-ourmenu__list {
+    display: none;
+    margin-bottom: 0;
+    &.is-visible {
+        display: block;
+    }
+}
+
+.c-ourmenu-list__items {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    animation: fade-in-bottom 400ms ease;
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #262626;
+        justify-content: space-between;
+        padding: 32px 0 24px;
+        @include mq(md){
+            flex-direction: row;
+            align-items: flex-end;
+            width: auto;
+        }
+        @include mq(desktopAd) {
+            padding: 24px 0 15px;
+        }
+        &:last-child {
+            border: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.c-ourmenu__name {
+    margin: 0;
+    @include font-size(24px, 32px);
+    margin-bottom: 12px;
+    @include mq(md) {
+        @include font-size(26px, 34px);
+        margin-bottom: 14px;
+    }
+    @include mq(desktopAd) {
+        @include font-size(22px, 29px);
+        margin-bottom: 7px;
+    }
+    font-weight: 400;
+}
+
+.c-ourmenu__description {
+    @include font-size(21px, 1.4);
+    margin-bottom: 16px;
+    display: block;
+    @include mq(md) {
+        @include font-size(22px, 1.4);
+        margin-bottom: 0;
+    }
+    @include mq(desktopAd) {
+        @include font-size(18px, 30px);
+        margin-bottom: 7px;
+    }
+    color: $color-silver;
+}
+
+.c-ourmenu__price {
+    @include font-size(26px, 32px);
+    @include mq(desktopAd) {
+        @include font-size(22px, 42px);
+    }
+    font-weight: 400;
+    font-family: $catamaran;
+    color: $color-price;
+}
