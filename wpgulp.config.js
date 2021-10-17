@@ -134,13 +134,13 @@ const translationDestination = './languages';
 const packageName = 'WPGULP';
 
 // Where can users report bugs.
-const bugReport = 'https://markitasdone.com/contact/';
+const bugReport = 'https://m-web.ir/contact/';
 
 // Last translator Email ID.
-const lastTranslator = 'Technical Support <developer@markitasdone.com';
+const lastTranslator = 'Technical Support <developer@m-web.ir';
 
 // Team's Email ID.
-const team = 'Technical Support <developer@markitasdone.com';
+const team = 'Technical Support <developer@m-web.ir';
 
 // Browsers you care about for auto-prefixing. Browserlist https://github.com/ai/browserslist
 // The following list is set as per WordPress requirements. Though; Feel free to change.

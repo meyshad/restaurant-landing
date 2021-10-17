@@ -14,7 +14,7 @@ A starter theme called Starter Theme.
 
 == Description ==
 
-Wordpress theme designed by Markitasdone.Com
+Wordpress theme designed by Resturant-landing.Com
 
 == Installation ==
 
